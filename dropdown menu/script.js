@@ -21,3 +21,11 @@ const slideImage = ()=>{
         }
     )
 }
+
+setInterval(()=>{
+    counter++;
+    if(counter===slides.length){
+        counter = 0;
+    }
+    slideImage()
+},3000)
