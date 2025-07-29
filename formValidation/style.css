@@ -1,0 +1,56 @@
+body {
+    font: 1em sans-serif;
+    width: 200px;
+    padding: 0;
+    margin: 50px auto;
+  }
+  
+  label,input{
+    margin-top: 3px;
+  }
+  
+  input[type="email"] {
+    appearance: none;
+  
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: 90%;
+  
+   
+  }
+  
+  /* invalid fields */
+  input:invalid {
+    outline: none;
+    border: 1px solid #333;
+    border-color: #900;
+    background-color: rgb(214, 205, 205);
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  input:valid{
+    border: none;
+  }
+  /* error message styles */
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  span{
+    margin-top: 2px;
+    padding: 2px;
+    color: red;
+    font-size: 12px;
+    display: none;
+
+  }
+  
+  

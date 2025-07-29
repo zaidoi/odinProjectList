@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form novalidate>
+        <label for="email">Email</label>
+        <input type="email" required placeholder="exmaple@gmail.com" id="Email"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+        <span id="mailerror"></span>
+        <br>
+        <label for="country ">Country</label>
+        <input type="text" pattern="^[A-Za-z\s]{2,}$" required  id="country">
+        <span id="countryerror"></span>
+        <br>
+        <label for="postalcode">Postal Code</label>
+        <input type="tel" required  id="postalcode" pattern="^[1-9][0-9]{5}$">
+        <span id="postalcodeerror"></span>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$">
+        <span id="passworderror"></span>
+        <br>
+        <label for="password">Password Conformation</label>
+        <input type="password"  id="passwordconformation"  required >
+        <span id="passwordconformationerror"></span>
+        <br>
+        <button>Submit</button>
+      </form>
+      
+      
+      <script src="script.js"></script>
+      
+</body>
+</html>
