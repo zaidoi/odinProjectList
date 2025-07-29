@@ -93,7 +93,8 @@ btn.addEventListener('click',(e) =>{
     if(password.value !== passwordC.value){
         passwordC.value = ""
         passwordCSpan.textContent = "The password doesnt match "
-    }else{
+    }else if (email.value && country.value && postalCode.value && password.value && passwordC.value){
         alert("Form Submitted")
+        
     }
 })
