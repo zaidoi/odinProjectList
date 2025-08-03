@@ -88,7 +88,7 @@ btn.addEventListener("click",async (e)=>{
     const placeName = inputData.value
   
     if(placeName == ''){
-        alert('Alizah beta masti nhi')
+        alert('Goli beta masti nhi')
         inputData.value = ""
     }
 try{
